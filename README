@@ -1,0 +1,20 @@
+= Amazon RDS - DB Stats
+
+This script will give you back Minimum and Maximum values for Free Storage Space, CPU Utilization and Database Connection count for a given time period from now.
+                        
+To run the script you will need
+* An Amazon AWSAccessKeyId
+* An Amazon AWSSecretKey
+* An Amazon RDS instance identifier
+* A number of minutes representing a time period before now (i.e 60 = last hour)
+
+
+Run with 
+	 ruby rds_db_stats.rb AWS_ACCESS_KEY_ID AWS_SECRET_KEY_ID RDS_DATABASE_ID TIME_IN_MINUTES
+	
+e.g
+
+	ruby rds_db_stats.rb 06FKISN8756DHLKW7G2 W8756DHLKW7W+L8756DHLKW79282765432GFTJPeK database-main 60
+
+
+* This script currently uses my form of the amazon-ec2 gem, as there is an issue with parameter passing to Cloudwatch. I'll remove this once my fix gets (hopefully) gets accepted to grempe/amazon-ec2
