@@ -1,0 +1,3 @@
+[submodule "vendor/wal/amazon-ec2"]
+	path = vendor/wal/amazon-ec2
+	url = git@github.com:wal/amazon-ec2.git
