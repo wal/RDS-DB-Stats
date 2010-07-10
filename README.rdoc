@@ -1,6 +1,6 @@
 = Amazon RDS - DB Stats
 
-This script will give you back Minimum and Maximum values for Free Storage Space, CPU Utilization and Database Connection count for a given time period from now.
+This script will give you back Minimum and Maximum values for Free Storage Space, CPU Utilization and Database Connection count for a given time period before Time.now.
                         
 To run the script you will need
 * An Amazon AWSAccessKeyId
@@ -17,4 +17,4 @@ e.g
 	ruby rds_db_stats.rb 06FKISN8756DHLKW7G2 W8756DHLKW7W+L8756DHLKW79282765432GFTJPeK database-main 60
 
 
-* This script currently uses my form of the amazon-ec2 gem, as there is an issue with parameter passing to Cloudwatch. I'll remove this once my fix gets (hopefully) gets accepted to grempe/amazon-ec2
+* This script currently uses my fork of the amazon-ec2 gem, as there is an issue with parameter passing 'Dimension' parameters to Amazon Cloudwatch. I'll remove this once my fix gets (hopefully) gets accepted to grempe/amazon-ec2.
